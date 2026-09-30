@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Products | Pro Liquor Discounter Whitecourt &amp; Vegreville</title>
+  <meta name="description" content="Browse sample beer, wine, spirits, whisky, vodka, rum, gin, tequila and cooler listings. Confirm live availability and pricing in store.">
+  <meta property="og:title" content="Products | Pro Liquor Discounter">
+  <meta property="og:description" content="Filter by category or search the sample catalogue.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="age-backdrop" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle" aria-hidden="true">
+    <div class="age-modal"><div class="brand-mark">P</div>
+      <h2 id="ageTitle">WELCOME TO PRO LIQUOR DISCOUNTER</h2><p>Are you of legal drinking age in Alberta?</p>
+      <div class="age-actions"><button class="btn btn-gold" id="ageYes" type="button">Yes, Enter</button><button class="btn btn-outline" id="ageNo" type="button">No, Exit</button></div>
+      <div class="age-denied" id="ageDenied" role="alert">This website contains alcohol-related content and is intended for visitors of legal drinking age.</div>
+    </div>
+  </div>
+
+  <div class="topbar"><div class="container topbar-inner">
+    <div class="topbar-locations"><span>Whitecourt: 3732 Kepler Street</span><span>Vegreville: #1, 6805 Hwy 16A</span></div>
+    <div><a href="mailto:proliquordiscounter@gmail.com">proliquordiscounter@gmail.com</a></div>
+  </div></div>
+
+  <header class="navbar" id="navbar"><div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text"><strong>PRO LIQUOR DISCOUNTER</strong><span>Whitecourt &bull; Vegreville</span></span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="specials.html">Specials</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a>
+      <a class="btn btn-gold nav-cta desktop-only" href="locations.html" style="padding:11px 20px">Find a Store</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div></header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="specials.html">Specials</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a>
+    <a class="btn btn-gold" href="locations.html">Find a Store</a>
+  </nav>
+
+  <main>
+    <section class="page-hero"><div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Products</div>
+      <h1>OUR PRODUCTS</h1>
+      <p>Filter by category or search the catalogue. Listings shown are <strong>samples for layout</strong> — edit them in <code>js/products.js</code>. Confirm live availability in store.</p>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <div class="toolbar">
+        <label class="search-box" for="productSearch"><span aria-hidden="true">&#x1F50D;</span><input id="productSearch" type="search" placeholder="Search products or categories…" autocomplete="off"></label>
+        <span id="productCount" class="product-meta" role="status"></span>
+      </div>
+      <div class="filter-pills" role="group" aria-label="Filter by category">
+        <button class="pill active" data-cat="All" type="button">All</button>
+        <button class="pill" data-cat="Spirits" type="button">Spirits</button>
+        <button class="pill" data-cat="Whisky" type="button">Whisky</button>
+        <button class="pill" data-cat="Vodka" type="button">Vodka</button>
+        <button class="pill" data-cat="Rum" type="button">Rum</button>
+        <button class="pill" data-cat="Gin" type="button">Gin</button>
+        <button class="pill" data-cat="Tequila" type="button">Tequila</button>
+        <button class="pill" data-cat="Wine" type="button">Wine</button>
+        <button class="pill" data-cat="Beer" type="button">Beer</button>
+        <button class="pill" data-cat="Coolers" type="button">Coolers</button>
+      </div>
+
+      <div class="product-grid" id="productGrid" style="margin-top:24px"></div>
+
+      <div class="demo-note"><strong>Demo catalogue:</strong> products and “Special” badges above are placeholders. Replace the <code>PLD_PRODUCTS</code> array in <code>js/products.js</code> with verified items. Do not publish real prices until confirmed in store.</div>
+    </div></section>
+  </main>
+
+  <!-- Product detail modal -->
+  <div class="modal-backdrop" id="productModal" aria-hidden="true">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="pmName">
+      <div class="modal-media"><img id="pmImage" src="images/spirits.jpg" alt="Product image"><button class="modal-close" id="pmClose" aria-label="Close details">&times;</button></div>
+      <div class="modal-body">
+        <h3 id="pmName">Product name</h3>
+        <div class="product-meta" id="pmMeta"></div>
+        <div class="product-price" id="pmPrice" style="margin:10px 0"></div>
+        <p id="pmDesc" style="color:#5d5347"></p>
+        <div class="disclaimer" style="margin-top:16px">Prices and availability are subject to change. Please confirm current pricing and availability in store.</div>
+        <div style="margin-top:18px;display:flex;gap:10px;flex-wrap:wrap">
+          <a class="btn btn-dark btn-small" href="locations.html">Find a Store</a>
+          <a class="btn btn-ghost btn-small" href="contact.html">Ask About This Product</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer><div class="container footer-grid">
+    <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text"><strong>PRO LIQUOR DISCOUNTER</strong><span>Whitecourt &bull; Vegreville</span></span></a>
+      <p>Great selection. Great value. Local convenience.</p><span class="age-note">18+ / Legal drinking age applies. Please drink responsibly.</span></div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="specials.html">Specials</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Locations</h4><div class="footer-loc"><strong>Alps Liquor Whitecourt</strong>3732 Kepler Street<br>Whitecourt, AB T7S 0A2</div><div class="footer-loc"><strong>Pro Liquor Discounter Vegreville</strong>#1, 6805 Hwy 16A<br>Vegreville, AB T9C 0A4</div></div>
+    <div><h4>Contact</h4><p><a href="mailto:proliquordiscounter@gmail.com">proliquordiscounter@gmail.com</a></p><h4 style="margin-top:20px">Legal</h4><ul class="legal-links"><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Responsible Drinking</a></li></ul></div>
+  </div><div class="container footer-bottom"><span>&copy; <span data-year>2026</span> Pro Liquor Discounter. All rights reserved.</span><span>Prices and availability subject to change. Please confirm in store.</span></div></footer>
+  <button id="backToTop" aria-label="Back to top">&uarr;</button>
+  <script src="js/age-gate.js" defer></script>
+  <script src="js/products.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

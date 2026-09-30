@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Specials &amp; Deals | Pro Liquor Discounter Alberta</title>
+  <meta name="description" content="Discover the latest promotions and local deals at Pro Liquor Discounter Whitecourt and Vegreville. View the current flyer.">
+  <meta property="og:title" content="Specials & Deals | Pro Liquor Discounter">
+  <meta property="og:description" content="Featured deals, weekly and monthly specials.">
+  <meta property="og:type" content="website">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+  <div class="age-backdrop" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle" aria-hidden="true">
+    <div class="age-modal"><div class="brand-mark">P</div>
+      <h2 id="ageTitle">WELCOME TO PRO LIQUOR DISCOUNTER</h2><p>Are you of legal drinking age in Alberta?</p>
+      <div class="age-actions"><button class="btn btn-gold" id="ageYes" type="button">Yes, Enter</button><button class="btn btn-outline" id="ageNo" type="button">No, Exit</button></div>
+      <div class="age-denied" id="ageDenied" role="alert">This website contains alcohol-related content and is intended for visitors of legal drinking age.</div>
+    </div>
+  </div>
+
+  <div class="topbar"><div class="container topbar-inner">
+    <div class="topbar-locations"><span>Whitecourt: 3732 Kepler Street</span><span>Vegreville: #1, 6805 Hwy 16A</span></div>
+    <div><a href="mailto:proliquordiscounter@gmail.com">proliquordiscounter@gmail.com</a></div>
+  </div></div>
+
+  <header class="navbar" id="navbar"><div class="container nav-inner">
+    <a class="brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text"><strong>PRO LIQUOR DISCOUNTER</strong><span>Whitecourt &bull; Vegreville</span></span></a>
+    <nav class="nav-links" aria-label="Primary navigation">
+      <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="specials.html">Specials</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a>
+      <a class="btn btn-gold nav-cta desktop-only" href="locations.html" style="padding:11px 20px">Find a Store</a>
+    </nav>
+    <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu"><span></span><span></span><span></span></button>
+  </div></header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a><a href="about.html">About</a><a href="products.html">Products</a><a href="specials.html">Specials</a><a href="locations.html">Locations</a><a href="contact.html">Contact</a>
+    <a class="btn btn-gold" href="locations.html">Find a Store</a>
+  </nav>
+
+  <main>
+    <section class="page-hero"><div class="container">
+      <div class="breadcrumb"><a href="index.html">Home</a> / Specials</div>
+      <h1>SPECIALS &amp; DEALS</h1>
+      <p>Discover our latest promotions and local deals. Replace the sample cards below with verified in-store offers.</p>
+    </div></section>
+
+    <section class="section"><div class="container">
+      <span class="eyebrow">Featured deals</span>
+      <h2 class="section-title">This Week at Our Stores</h2>
+      <div class="deal-grid">
+        <article class="deal-card js-reveal">
+          <img src="images/deal-beer.jpg" alt="Beer multipack special" loading="lazy">
+          <div class="deal-body"><span class="cat-tag" style="position:static">Weekly Special</span><h3 style="margin-top:12px">Beer Multipack Savings</h3><p>Sample promotion slot — stock up for the weekend. Confirm price in store.</p>
+            <div class="deal-price"><span class="now">In-store price</span></div>
+            <a class="link-arrow" href="locations.html">Visit store &rarr;</a></div>
+        </article>
+        <article class="deal-card js-reveal">
+          <img src="images/deal-wine.jpg" alt="Wine special" loading="lazy">
+          <div class="deal-body"><span class="cat-tag" style="position:static">Monthly Special</span><h3 style="margin-top:12px">Wine Favourites</h3><p>Sample promotion slot — reds and whites for every table. Confirm price in store.</p>
+            <div class="deal-price"><span class="now">In-store price</span></div>
+            <a class="link-arrow" href="locations.html">Visit store &rarr;</a></div>
+        </article>
+        <article class="deal-card js-reveal">
+          <img src="images/deal-spirits.jpg" alt="Spirits special" loading="lazy">
+          <div class="deal-body"><span class="cat-tag" style="position:static">Featured Deal</span><h3 style="margin-top:12px">Spirits Picks</h3><p>Sample promotion slot — featured bottles for cocktails and gifting.</p>
+            <div class="deal-price"><span class="now">In-store price</span></div>
+            <a class="link-arrow" href="products.html">Browse products &rarr;</a></div>
+        </article>
+      </div>
+
+      <div class="flyer-box js-reveal">
+        <!-- Replace this file to update the flyer: images/current-flyer.jpg -->
+        <img src="images/current-flyer.jpg" alt="Current Pro Liquor Discounter flyer" loading="lazy">
+        <div class="flyer-content">
+          <span class="eyebrow">Store flyer</span>
+          <h2 class="section-title">Current Flyer</h2>
+          <p class="section-sub">Swap <code>images/current-flyer.jpg</code> with your latest flyer image — no code changes needed. Link the button below to a PDF if you prefer.</p>
+          <div style="display:flex;gap:12px;flex-wrap:wrap;margin-top:8px">
+            <a class="btn btn-dark" href="images/current-flyer.jpg" target="_blank" rel="noopener">View Flyer</a>
+            <a class="btn btn-ghost" href="contact.html">Ask About a Deal</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="disclaimer"><strong>Please note:</strong> Prices and availability are subject to change. Please confirm current pricing and availability in store.</div>
+    </div></section>
+  </main>
+
+  <footer><div class="container footer-grid">
+    <div class="footer-brand"><a class="brand" href="index.html"><span class="brand-mark">P</span><span class="brand-text"><strong>PRO LIQUOR DISCOUNTER</strong><span>Whitecourt &bull; Vegreville</span></span></a>
+      <p>Great selection. Great value. Local convenience.</p><span class="age-note">18+ / Legal drinking age applies. Please drink responsibly.</span></div>
+    <div><h4>Quick Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="products.html">Products</a></li><li><a href="specials.html">Specials</a></li><li><a href="locations.html">Locations</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+    <div><h4>Locations</h4><div class="footer-loc"><strong>Alps Liquor Whitecourt</strong>3732 Kepler Street<br>Whitecourt, AB T7S 0A2</div><div class="footer-loc"><strong>Pro Liquor Discounter Vegreville</strong>#1, 6805 Hwy 16A<br>Vegreville, AB T9C 0A4</div></div>
+    <div><h4>Contact</h4><p><a href="mailto:proliquordiscounter@gmail.com">proliquordiscounter@gmail.com</a></p><h4 style="margin-top:20px">Legal</h4><ul class="legal-links"><li><a href="#">Privacy</a></li><li><a href="#">Terms</a></li><li><a href="#">Responsible Drinking</a></li></ul></div>
+  </div><div class="container footer-bottom"><span>&copy; <span data-year>2026</span> Pro Liquor Discounter. All rights reserved.</span><span>Prices and availability subject to change. Please confirm in store.</span></div></footer>
+  <button id="backToTop" aria-label="Back to top">&uarr;</button>
+  <script src="js/age-gate.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

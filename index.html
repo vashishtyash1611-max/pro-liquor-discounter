@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pro Liquor Discounter | Beer, Wine &amp; Spirits in Alberta</title>
+  <meta name="description" content="Pro Liquor Discounter — great selection, great value, local convenience. Beer, wine, spirits & coolers at Whitecourt and Vegreville, Alberta.">
+  <meta property="og:title" content="Pro Liquor Discounter | Beer, Wine & Spirits in Alberta">
+  <meta property="og:description" content="Discover beer, wine, spirits and coolers at our Whitecourt and Vegreville locations.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="images/hero.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,600;0,700;0,800;1,600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="stylesheet" href="css/animations.css">
+  <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Age verification gate -->
+  <div class="age-backdrop" id="ageGate" role="dialog" aria-modal="true" aria-labelledby="ageTitle" aria-hidden="true">
+    <div class="age-modal">
+      <div class="brand-mark" aria-hidden="true">P</div>
+      <h2 id="ageTitle">WELCOME TO PRO LIQUOR DISCOUNTER</h2>
+      <p>Are you of legal drinking age in Alberta?</p>
+      <div class="age-actions">
+        <button class="btn btn-gold" id="ageYes" type="button">Yes, Enter</button>
+        <button class="btn btn-outline" id="ageNo" type="button">No, Exit</button>
+      </div>
+      <div class="age-denied" id="ageDenied" role="alert">
+        This website contains alcohol-related content and is intended for visitors of legal drinking age.
+        Please come back when you meet the legal requirements.
+      </div>
+      <p style="margin-top:18px;font-size:0.8rem;color:rgba(246,241,229,0.55)">18+ / Legal drinking age applies. Please drink responsibly.</p>
+    </div>
+  </div>
+
+  <!-- Top bar -->
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <div class="topbar-locations">
+        <span>Whitecourt: 3732 Kepler Street</span>
+        <span>Vegreville: #1, 6805 Hwy 16A</span>
+      </div>
+      <div><a href="mailto:proliquordiscounter@gmail.com">proliquordiscounter@gmail.com</a></div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a class="brand" href="index.html" aria-label="Pro Liquor Discounter home">
+        <span class="brand-mark" aria-hidden="true">P</span>
+        <span class="brand-text"><strong>PRO LIQUOR DISCOUNTER</strong><span>Whitecourt &bull; Vegreville</span></span>
+      </a>
+      <nav class="nav-links" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="products.html">Products</a>
+        <a href="specials.html">Specials</a>
+        <a href="locations.html">Locations</a>
+        <a href="contact.html">Contact</a>
+        <a class="btn btn-gold nav-cta desktop-only" href="locations.html" style="padding:11px 20px">Find a Store</a>
+      </nav>
+      <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileMenu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+  <nav class="mobile-menu" id="mobileMenu" aria-label="Mobile navigation">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="products.html">Products</a>
+    <a href="specials.html">Specials</a>
+    <a href="locations.html">Locations</a>
+    <a href="contact.html">Contact</a>
+    <a class="btn btn-gold" href="locations.html">Find a Store</a>
+  </nav>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-media" aria-hidden="true">
+        <!-- Replace: images/hero.jpg -->
+        <img src="images/hero.jpg" alt="" fetchpriority="high">
+      </div>
+      <span class="hero-glow g1" aria-hidden="true"></span>
+      <span class="hero-glow g2" aria-hidden="true"></span>
+      <div class="container hero-inner">
+        <div>
+          <span class="hero-badge hero-entrance">Alberta &bull; Whitecourt &amp; Vegreville</span>
+          <h1 class="hero-entrance d1">YOUR LOCAL DESTINATION FOR <em>GREAT DRINKS &amp; GREAT DEALS</em></h1>
+          <p class="lead hero-entrance d2">Discover an extensive selection of beer, wine, spirits and coolers at Pro Liquor Discounter. Shop local at our Whitecourt and Vegreville locations.</p>
+          <div class="hero-actions hero-entrance d3">
+            <a class="btn btn-gold" href="products.html">Explore Products</a>
+            <a class="btn btn-outline" href="locations.html">Find a Store</a>
+          </div>
+          <div class="hero-meta hero-entrance d4">
+            <div><strong>2 Locations</strong>Whitecourt &amp; Vegreville</div>
+            <div><strong>Wide Range</strong>Beer &bull; Wine &bull; Spirits</div>
+            <div><strong>Local Team</strong>Friendly service</div>
+          </div>
+        </div>
+        <div class="hero-card hero-entrance d2">
+          <!-- Replace: images/hero-liquor.jpg -->
+          <img src="images/hero-liquor.jpg" alt="Premium liquor bottles and glassware at Pro Liquor Discounter">
+          <div class="hero-card-body">
+            <h3>Premium Selection, Honest Value</h3>
+            <p>Browse everyday favourites and seasonal picks — then visit us in store for current pricing and availability.</p>
+            <div class="hero-card-locations">
+              <div class="mini-loc">
+                <strong>Alps Liquor Whitecourt</strong>
+                <span>3732 Kepler Street</span><br>
+                <a href="location-whitecourt.html">View store &rarr;</a>
+              </div>
+              <div class="mini-loc">
+                <strong>Pro Liquor Vegreville</strong>
+                <span>#1, 6805 Hwy 16A</span><br>
+                <a href="location-vegreville.html">View store &rarr;</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST / VALUE -->
+    <section class="section" aria-labelledby="valueTitle">
+      <div class="container">
+        <span class="eyebrow">Why shop with us</span>
+        <h2 class="section-title" id="valueTitle">Premium Selection &bull; Great Value &bull; Local Convenience</h2>
+        <p class="section-sub">A neighbourhood liquor store experience with a well-rounded range and competitive everyday pricing.</p>
+        <div class="value-grid">
+          <div class="value-card js-reveal">
+            <div class="value-icon" aria-hidden="true">&#x1F377;</div>
+            <h3>Great Selection</h3>
+            <p>Explore a wide range of beer, wine, spirits and ready-to-drink beverages.</p>
+          </div>
+          <div class="value-card js-reveal">
+            <div class="value-icon" aria-hidden="true">&#x1F4B0;</div>
+            <h3>Great Prices</h3>
+            <p>Discover competitive pricing and regular specials.</p>
+          </div>
+          <div class="value-card js-reveal">
+            <div class="value-icon" aria-hidden="true">&#x1F4CD;</div>
+            <h3>Two Convenient Locations</h3>
+            <p>Visit us in Whitecourt or Vegreville — easy to find, easy to shop.</p>
+          </div>
+          <div class="value-card js-reveal">
+            <div class="value-icon" aria-hidden="true">&#x1F91D;</div>
+            <h3>Local Service</h3>
+            <p>Enjoy friendly service and a convenient local shopping experience.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CATEGORIES -->
+    <section class="section dark" aria-labelledby="catTitle">
+      <div class="container">
+        <span class="eyebrow on-dark">Shop by category</span>
+        <h2 class="section-title" id="catTitle">Explore Our Collection</h2>
+        <p class="section-sub light">Eight curated categories. Select one to browse sample products — confirm live availability in store.</p>
+        <div class="cat-grid">
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Aged &amp; Smooth</span><img src="images/whisky.jpg" alt="Premium whisky bottles" loading="lazy"></div>
+            <div class="cat-body"><h3>WHISKY</h3><p>Rich, oak-forward favourites and smooth everyday pours.</p><a class="link-arrow" href="products.html?cat=Whisky">Explore Selection &rarr;</a></div>
+          </article>
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Clean &amp; Classic</span><img src="images/vodka.jpg" alt="Premium vodka bottles" loading="lazy"></div>
+            <div class="cat-body"><h3>VODKA</h3><p>Crisp, versatile bottles for cocktails and gatherings.</p><a class="link-arrow" href="products.html?cat=Vodka">Explore Selection &rarr;</a></div>
+          </article>
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Warm &amp; Golden</span><img src="images/rum.jpg" alt="Rum bottles" loading="lazy"></div>
+            <div class="cat-body"><h3>RUM</h3><p>Golden, spiced and white styles for every occasion.</p><a class="link-arrow" href="products.html?cat=Rum">Explore Selection &rarr;</a></div>
+          </article>
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Botanical</span><img src="images/gin.jpg" alt="Gin bottles with botanicals" loading="lazy"></div>
+            <div class="cat-body"><h3>GIN</h3><p>Botanical, citrus-led gins for elevated cocktails.</p><a class="link-arrow" href="products.html?cat=Gin">Explore Selection &rarr;</a></div>
+          </article>
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Red &amp; White</span><img src="images/wine.jpg" alt="Red and white wine bottles" loading="lazy"></div>
+            <div class="cat-body"><h3>WINE</h3><p>Food-friendly reds, crisp whites and easy crowd-pleasers.</p><a class="link-arrow" href="products.html?cat=Wine">Explore Selection &rarr;</a></div>
+          </article>
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Cold &amp; Crisp</span><img src="images/beer.jpg" alt="Beer cans and bottles" loading="lazy"></div>
+            <div class="cat-body"><h3>BEER</h3><p>Lagers, ales and multipacks, served cold and ready.</p><a class="link-arrow" href="products.html?cat=Beer">Explore Selection &rarr;</a></div>
+          </article>
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Ready to Drink</span><img src="images/coolers.jpg" alt="Ready-to-drink coolers" loading="lazy"></div>
+            <div class="cat-body"><h3>COOLERS</h3><p>Refreshing ready-to-drink coolers in vibrant flavours.</p><a class="link-arrow" href="products.html?cat=Coolers">Explore Selection &rarr;</a></div>
+          </article>
+          <article class="cat-card js-reveal">
+            <div class="cat-media"><span class="cat-tag">Curated</span><img src="images/spirits.jpg" alt="Assorted premium spirits" loading="lazy"></div>
+            <div class="cat-body"><h3>SPIRITS</h3><p>Assorted spirits including tequila and specialty picks.</p><a class="link-arrow" href="products.html?cat=Spirits">Explore Selection &rarr;</a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- STORES PREVIEW -->
+    <section class="section cream-dark" aria-labelledby="storesTitle">
+      <div class="container">
+        <span class="eyebrow">Visit us</span>
+        <h2 class="section-title" id="storesTitle">Find Your Nearest Store</h2>
+        <p class="section-sub">Two Alberta locations with easy access and friendly local teams.</p>
+        <div class="store-grid">
+          <article class="store-card js-reveal">
+            <img src="images/store-whitecourt.jpg" alt="Alps Liquor Whitecourt storefront" loading="lazy">
+            <div class="store-body">
+              <span class="store-num">Store 01</span>
+              <h3>Alps Liquor Whitecourt</h3>
+              <p class="store-addr">3732 Kepler Street<br>Whitecourt, AB T7S 0A2, Canada</p>
+              <div class="store-actions">
+                <a class="btn btn-dark btn-small" href="https://maps.app.goo.gl/HTo6Ryaa71NJxgZj7" target="_blank" rel="noopener">Get Directions</a>
+                <a class="btn btn-ghost btn-small" href="location-whitecourt.html">View Store</a>
+              </div>
+            </div>
+          </article>
+          <article class="store-card js-reveal">
+            <img src="images/store-vegreville.jpg" alt="Pro Liquor Discounter Vegreville storefront" loading="lazy">
+            <div class="store-body">
+              <span class="store-num">Store 02</span>
+              <h3>Pro Liquor Discounter Vegreville</h3>
+              <p class="store-addr">#1, 6805 Hwy 16A<br>Vegreville, AB T9C 0A4, Canada</p>
+              <div class="store-actions">
+                <a class="btn btn-dark btn-small" href="https://maps.app.goo.gl/hwuQT73NcyMQTsY18" target="_blank" rel="noopener">Get Directions</a>
+                <a class="btn btn-ghost btn-small" href="location-vegreville.html">View Store</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- EVENT / BULK -->
+    <section class="section" aria-labelledby="eventTitle">
+      <div class="container">
+        <div class="cta-band js-reveal">
+          <div>
+            <span class="eyebrow on-dark">Bulk &amp; events</span>
+            <h2 id="eventTitle">PLANNING A SPECIAL EVENT?</h2>
+            <p>Planning a wedding, corporate gathering, celebration or large event? Get in touch with our team to discuss your requirements.</p>
+            <div style="margin-top:22px;display:flex;gap:12px;flex-wrap:wrap">
+              <a class="btn btn-gold" href="contact.html">Contact Us</a>
+              <a class="btn btn-outline" href="specials.html">View Specials</a>
+            </div>
+          </div>
+          <img src="images/event.jpg" alt="Elegant event table with drinks" loading="lazy">
+        </div>
+      </div>
+    </section>
+
+    <!-- NEWSLETTER -->
+    <section class="section" style="padding-top:0" aria-labelledby="nlTitle">
+      <div class="container">
+        <div class="newsletter js-reveal">
+          <div>
+            <span class="eyebrow on-dark">Updates</span>
+            <h2 id="nlTitle">STAY IN THE KNOW</h2>
+            <p>Be the first to hear about new specials, promotions and store updates.</p>
+          </div>
+          <form id="newsletterForm" novalidate>
+            <div class="form-row">
+              <div class="field"><label for="nlName">First Name</label><input id="nlName" name="firstName" type="text" placeholder="Your first name" autocomplete="given-name"></div>
+              <div class="field"><label for="nlEmail">Email</label><input id="nlEmail" name="email" type="email" placeholder="you@example.com" required autocomplete="email"></div>
+            </div>
+            <label class="checkbox-row"><input type="checkbox" id="nlConsent"> <span>I confirm that I am of legal drinking age and agree to receive promotional communications.</span></label>
+            <div class="form-error" id="nlError" role="alert"></div>
+            <div class="form-success" id="nlSuccess" style="display:none" role="status"></div>
+            <button class="btn btn-gold" type="submit" style="margin-top:8px">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <a class="brand" href="index.html"><span class="brand-mark" aria-hidden="true">P</span><span class="brand-text"><strong>PRO LIQUOR DISCOUNTER</strong><span>Whitecourt &bull; Vegreville</span></span></a>
+        <p>Great selection. Great value. Local convenience.</p>
+        <span class="age-note">18+ / Legal drinking age applies. Please drink responsibly.</span>
+      </div>
+      <div>
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="specials.html">Specials</a></li>
+          <li><a href="locations.html">Locations</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Locations</h4>
+        <div class="footer-loc"><strong>Alps Liquor Whitecourt</strong>3732 Kepler Street<br>Whitecourt, AB T7S 0A2</div>
+        <div class="footer-loc"><strong>Pro Liquor Discounter Vegreville</strong>#1, 6805 Hwy 16A<br>Vegreville, AB T9C 0A4</div>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p><a href="mailto:proliquordiscounter@gmail.com">proliquordiscounter@gmail.com</a></p>
+        <h4 style="margin-top:20px">Legal</h4>
+        <ul class="legal-links">
+          <li><a href="#">Privacy</a></li>
+          <li><a href="#">Terms</a></li>
+          <li><a href="#">Responsible Drinking</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>&copy; <span data-year>2026</span> Pro Liquor Discounter. All rights reserved.</span>
+      <span>Prices and availability subject to change. Please confirm in store.</span>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Back to top" title="Back to top">&uarr;</button>
+
+  <script src="js/age-gate.js" defer></script>
+  <script src="js/main.js" defer></script>
+</body>
+</html>

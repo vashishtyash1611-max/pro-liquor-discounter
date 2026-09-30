@@ -1,0 +1,80 @@
+/* ============================================================
+   PRO LIQUOR DISCOUNTER — responsive.css
+   Breakpoints: 1200 / 992 / 768 / 576 / 400
+   ============================================================ */
+
+@media (max-width: 1200px) {
+  .value-grid, .cat-grid { grid-template-columns: repeat(3, 1fr); }
+  .product-grid { grid-template-columns: repeat(3, 1fr); }
+  .footer-grid { grid-template-columns: 1fr 1fr; }
+}
+
+@media (max-width: 992px) {
+  .nav-links, .nav-cta.desktop-only { display: none; }
+  .hamburger { display: block; }
+  .mobile-menu {
+    display: block; position: fixed; top: var(--nav-height); left: 0; right: 0; z-index: 190;
+    background: rgba(14,10,8,0.98); border-bottom: 1px solid var(--border-soft);
+    padding: 12px 4% 20px; transform: translateY(-12px); opacity: 0; pointer-events: none;
+    transition: opacity 0.28s ease, transform 0.28s ease;
+    max-height: calc(100vh - var(--nav-height)); overflow-y: auto;
+  }
+  .mobile-menu.open { transform: none; opacity: 1; pointer-events: auto; }
+  .mobile-menu a { display: block; color: rgba(246,241,229,0.88); padding: 13px 14px; border-radius: 10px; font-weight: 600; }
+  .mobile-menu a:hover, .mobile-menu a.active { background: rgba(201,164,92,0.14); color: var(--gold-light); }
+  .mobile-menu .btn { width: 100%; margin-top: 10px; }
+
+  .hero-inner { grid-template-columns: 1fr; gap: 32px; padding: 60px 0 54px; }
+  .hero-card img { height: 280px; }
+  .value-grid, .cat-grid { grid-template-columns: repeat(2, 1fr); }
+  .product-grid { grid-template-columns: repeat(2, 1fr); }
+  .split { grid-template-columns: 1fr; gap: 28px; }
+  .split-media img { height: 360px; }
+  .deal-grid { grid-template-columns: repeat(2, 1fr); }
+  .flyer-box { grid-template-columns: 1fr; }
+  .flyer-box img { min-height: 260px; max-height: 340px; }
+  .cta-band { grid-template-columns: 1fr; padding: 36px 30px; }
+  .newsletter { grid-template-columns: 1fr; padding: 34px 28px; }
+  .contact-grid { grid-template-columns: 1fr; }
+  .store-grid { grid-template-columns: 1fr; }
+  .topbar-inner { flex-direction: column; align-items: flex-start; gap: 4px; }
+}
+
+@media (max-width: 768px) {
+  .section { padding: 60px 0; }
+  .deal-grid { grid-template-columns: 1fr; }
+  .form-row { grid-template-columns: 1fr; }
+  .hero-meta { gap: 14px; }
+  .hero-card-locations { grid-template-columns: 1fr; }
+  .map-container iframe { height: 240px; }
+  .footer-grid { grid-template-columns: 1fr; gap: 26px; padding: 48px 0 28px; }
+  .store-body { padding: 22px; }
+  .contact-form-card { padding: 24px 20px; }
+  .age-actions { grid-template-columns: 1fr; }
+  .flyer-content { padding: 28px 24px; }
+}
+
+@media (max-width: 576px) {
+  body { font-size: 15px; }
+  .value-grid, .cat-grid, .product-grid { grid-template-columns: 1fr; }
+  .cat-body p { min-height: 0; }
+  .hero h1 { font-size: 2.15rem; }
+  .hero-actions .btn { width: 100%; }
+  .search-box { min-width: 100%; max-width: 100%; }
+  .toolbar { flex-direction: column; align-items: stretch; }
+  .brand-text strong { font-size: 0.94rem; }
+  .brand-text span { font-size: 0.62rem; }
+  .cta-band { padding: 28px 22px; }
+  .cta-band img { height: 200px; }
+  .split-media img { height: 280px; }
+  .product-media { height: 200px; }
+  #backToTop { right: 14px; bottom: 14px; width: 46px; height: 46px; }
+}
+
+@media (max-width: 400px) {
+  .container { width: 93%; }
+  .btn { padding: 12px 18px; font-size: 0.86rem; }
+  .hero-badge { font-size: 0.72rem; }
+  .store-actions .btn { width: 100%; }
+  .age-modal { padding: 32px 24px; }
+}
